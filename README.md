@@ -17,7 +17,7 @@ Before running the first time you need to install the ruby dependencies.  From t
 # Configuration
 
  - Open phones.csv
- - Add lines in the format of <Name of Phone>,<IP Address>
+ - Add lines in the format of [Name of Phone],[IP Address]
 
   
 ## How to run the dashboard
