@@ -1,3 +1,7 @@
+# Meeting Room Phone Dashboard
+
+A simple dashboard that pings the IP addresses of the telephones in a set of defined meeting rooms.  Goes red if the phone is offline.  Assumes phones have static IPs.
+
 # Installation
 
 You'll need installed
