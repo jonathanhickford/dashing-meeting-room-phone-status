@@ -1,0 +1,15 @@
+<% content_for :title do %>Meeting Room Phone Status<% end %>
+
+
+<div class="gridster">
+  <ul>
+    <% CSV.foreach(File.expand_path('../../phones.csv', __FILE__), headers: true) do |phone| %>
+      <% tidy_name = phone['name'].gsub(/[^0-9a-z ]/i, '') %>
+
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="<%= tidy_name%>" data-view="Graph" data-title="<%= phone['name'] %>" style="background-color: #96bf48;"></div>
+      </li>
+
+    <% end %>
+  </ul>
+</div>
